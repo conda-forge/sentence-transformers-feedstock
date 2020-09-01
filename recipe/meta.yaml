@@ -1,13 +1,13 @@
 {% set name = "sentence-transformers" %}
-{% set version = "0.2.3" %}
+{% set version = "0.3.4" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 86030a9e2c20a9fe2121c60de5a0f5d9a65316fdd0d3deffe219937da508d593
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 1171bc8049cc661e8a244696bdf0ccb622b3fb57515ea2054f635e4ce017f988
   patches:
     - BERT.py.patch
     - RoBERTa.py.patch
@@ -16,10 +16,10 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
-requirements: 
+requirements:
   host:
     - pip
     - python
@@ -48,7 +48,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: "Sentence Embeddings using BERT / RoBERTa / XLNet"
+  summary: Sentence Embeddings using BERT / RoBERTa / XLNet
   doc_url: https://pypi.org/project/sentence-transformers/
   dev_url: https://github.com/UKPLab/sentence-transformers
 
