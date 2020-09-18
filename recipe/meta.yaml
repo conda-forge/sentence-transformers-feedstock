@@ -8,11 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: b85d4e4d61643de051efd2713d2aa0a233bf87b7c293f49022536e811f3f7e82
-  patches:
-    - BERT.py.patch
-    - RoBERTa.py.patch
-    - SentenceTransformer.py.patch
-    - XLNet.py.patch
 
 build:
   number: 0
@@ -31,7 +26,7 @@ requirements:
     - scipy
     - pytorch >=1.0.1
     - tqdm
-    - transformers
+    - transformers >=3.1
 
 test:
   imports:
