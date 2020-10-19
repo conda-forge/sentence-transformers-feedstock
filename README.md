@@ -5,11 +5,13 @@ Home: https://github.com/UKPLab/sentence-transformers
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sentence-transformers-feedstock/blob/master/LICENSE.txt)
 
 Summary: Sentence Embeddings using BERT / RoBERTa / XLNet
 
+Development: https://github.com/UKPLab/sentence-transformers
 
+Documentation: https://pypi.org/project/sentence-transformers/
 
 Current build status
 ====================
