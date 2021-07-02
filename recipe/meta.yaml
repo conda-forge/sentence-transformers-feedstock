@@ -17,11 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - nltk
     - numpy
-    - python
+    - python >=3.6
     - scikit-learn
     - scipy
     - pytorch >=1.0.1
