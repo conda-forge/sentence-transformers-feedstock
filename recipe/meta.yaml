@@ -25,11 +25,11 @@ requirements:
     - scikit-learn
     - scipy
     - tqdm
-    - pytorch ">=1.6.0"
+    - pytorch >=1.6.0
     - torchvision
     - sentencepiece
-    - tokenizers ">=0.10.3"
-    - transformers ">=4.6.0,<5.0.0"
+    - tokenizers >=0.10.3
+    - transformers >=4.6.0,<5.0.0
   run_constrained:
     # NOTE: huggingface-hub is not yet available on conda-forge.
     # Moving huggingface-hub under "run_constrained" as a temporary 
