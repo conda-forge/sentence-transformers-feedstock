@@ -1,5 +1,5 @@
 {% set name = "sentence-transformers" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 492eae8e9973f2b758d66d74325661e2816f0b6637365554a1eca9bcf60088ed
+  sha256: ccf95fa214546ac64428e86286e9d674b62900893936b46b26c904eb9dfcad19
 
 build:
   number: 0
@@ -19,14 +19,18 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - python >=3.6
     - nltk
     - numpy
-    - python >=3.6
     - scikit-learn
     - scipy
-    - pytorch >=1.0.1
     - tqdm
-    - transformers >=3.1
+    - pytorch >=1.6.0
+    - torchvision
+    - sentencepiece
+    - tokenizers >=0.10.3
+    - transformers >=4.6.0,<5.0.0
+    - huggingface_hub
 
 test:
   imports:
@@ -37,6 +41,10 @@ test:
     - sentence_transformers.models
     - sentence_transformers.models.tokenizer
     - sentence_transformers.readers
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/UKPLab/sentence-transformers
@@ -52,3 +60,4 @@ extra:
     - rluria14
     - oblute
     - ndmaxar
+    - sugatoray
