@@ -1,5 +1,5 @@
 {% set name = "sentence-transformers" %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c7365228b6d24e4d73cf49d409421820887ca43c86d49f264b68cfa00d761f96
+  sha256: 097011ceb88e0cd96c37bbdc7f905032821e5de1cead18ec78e550ef525c0df7
 
 build:
   number: 0
