@@ -1,5 +1,5 @@
 {% set name = "sentence-transformers" %}
-{% set version = "2.2.1" %}
+{% set version = "2.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 097011ceb88e0cd96c37bbdc7f905032821e5de1cead18ec78e550ef525c0df7
+  sha256: dbc60163b27de21076c9a30d24b5b7b6fa05141d68cf2553fa9a77bf79a29136
 
 build:
   number: 0
@@ -54,15 +54,15 @@ about:
   summary: Sentence Embeddings using BERT / RoBERTa / XLNet
   description: |
     ## Sentence Transformers: Multilingual Sentence, Paragraph, and Image Embeddings using BERT & Co.
-    
+
     This framework provides an easy method to compute dense vector representations for sentences, 
     paragraphs, and images. The models are based on transformer networks like 
     BERT / RoBERTa / XLM-RoBERTa etc. and achieve state-of-the-art performance in various task. 
     Text is embedding in vector space such that similar text is close and can efficiently be 
     found using cosine similarity.
-    
+
     PyPI: [https://pypi.org/project/sentence-transformers/](https://pypi.org/project/sentence-transformers/)
-    
+
   doc_url: https://pypi.org/project/sentence-transformers/
   dev_url: https://github.com/UKPLab/sentence-transformers
 
