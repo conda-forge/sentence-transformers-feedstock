@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python
+    - wheel
   run:
     - nltk
     - numpy
@@ -40,6 +41,10 @@ test:
     - sentence_transformers.models
     - sentence_transformers.models.tokenizer
     - sentence_transformers.readers
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/UKPLab/sentence-transformers
