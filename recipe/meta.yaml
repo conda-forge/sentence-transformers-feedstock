@@ -10,6 +10,8 @@ source:
   sha256: dbc60163b27de21076c9a30d24b5b7b6fa05141d68cf2553fa9a77bf79a29136
 
 build:
+  # skip s390x and ppc64le because torchvision does not support these
+  skip: True  # [linux and (s390x or ppc64le)]
   number: 0
   script: {{ PYTHON }} -m pip install . -vvv --no-deps --no-build-isolation
   noarch: python
