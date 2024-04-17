@@ -1,13 +1,13 @@
 {% set name = "sentence-transformers" %}
-{% set version = "2.6.1" %}
+{% set version = "2.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 633ad6b70e390ea335de8689652a5d6c21a323b79ed19519c2f392451088487f
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 2f7df99d1c021dded471ed2d079e9d1e4fc8e30ecb06f957be060511b36f24ea
 
 build:
   number: 0
