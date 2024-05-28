@@ -14,6 +14,7 @@ Development: https://github.com/UKPLab/sentence-transformers
 Documentation: https://pypi.org/project/sentence-transformers/
 
 
+
 This framework provides an easy method to compute dense vector representations for sentences,
 paragraphs, and images. The models are based on transformer networks like
 BERT / RoBERTa / XLM-RoBERTa etc. and achieve state-of-the-art performance in various task.
