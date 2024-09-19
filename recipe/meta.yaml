@@ -1,5 +1,5 @@
 {% set name = "sentence-transformers" %}
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 5e5b7bd84c634c11cb127b840ff96215a456de2dc9c5ecf97ecfa67002b1116f
+  sha256: 8f00020ef4ad6b918475c38af545c22f61403b67eb22d994860bab06902db160
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >=3.8
-    - numpy <2
+    - numpy
     - scipy
     - scikit-learn
     - tqdm
