@@ -41,8 +41,15 @@ test:
     - sentence_transformers.readers
   commands:
     - pip check
+    - pytest --durations 20 -sv tests/
   requires:
     - pip
+    - pytest >=7.1.2
+    - pytest-xdist
+    - pytest-timeout
+    - datasets
+    - accelerate>=0.20.3
+    - optimum
 
 about:
   home: https://github.com/UKPLab/sentence-transformers
