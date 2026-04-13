@@ -10,7 +10,7 @@ source:
   sha256: ef0c129d653f736df5fd74d46af11a2234328a32cddb1d91a1975c5f6cccc194
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -26,8 +26,9 @@ requirements:
     - scikit-learn
     - tqdm
     - pytorch >=1.11.0
-    - transformers >=4.41.0,<5.0.0
-    - huggingface_hub >=0.20.0
+    - transformers >=4.41.0,<6.0.0
+    - huggingface_hub >=0.23.0
+    - typing_extensions >=4.5.0
     - pillow
 
 test:
