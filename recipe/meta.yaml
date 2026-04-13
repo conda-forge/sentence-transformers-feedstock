@@ -27,7 +27,7 @@ requirements:
     - tqdm
     - pytorch >=1.11.0
     - transformers >=4.41.0,<6.0.0
-    - huggingface_hub >=0.20.0
+    - huggingface_hub >=0.23.0
     - typing_extensions >=4.5.0
     - pillow
 
